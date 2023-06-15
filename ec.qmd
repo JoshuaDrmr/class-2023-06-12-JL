@@ -1,6 +1,6 @@
 ---
 title: "Economic Connectedness"
-author: "David Kane"
+author: "Joshua Laborde"
 format: html
 ---
 
