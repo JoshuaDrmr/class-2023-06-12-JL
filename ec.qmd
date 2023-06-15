@@ -9,9 +9,10 @@ format: html
 #| echo: false
 #| message: false
 library(tidyverse)
+library(readr)
 ```
 
 ```{r}
-
+x<-read_csv(file="data/social_capital_county.csv")
 ```
 
