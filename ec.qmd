@@ -2,17 +2,21 @@
 title: "Economic Connectedness"
 author: "Joshua Laborde"
 format: html
+execute: 
+  echo: false
 ---
 
 
 ```{r}
-#| echo: false
 #| message: false
 library(tidyverse)
 library(readr)
+library(janitor)
 ```
 
 ```{r}
-x<-read_csv(file="data/social_capital_county.csv")
+read_csv(file="data/social_capital_county.csv")
+  select(county_name, pop2018, ec_county) |> 
+    mutate(state = tail(county_name))
 ```
 
